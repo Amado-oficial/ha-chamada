@@ -1,0 +1,15 @@
+{
+  "name": "mobileapp",
+  "version": "1.0.0",
+  "description": "An appication to distributed call from Angola",
+  "main": "app.js",
+  "scripts": {
+    "serve": "json-server --watch ./database/db.json"
+  },
+  "keywords": [],
+  "author": "Amado marques e David Alexandre",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

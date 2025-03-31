@@ -2,10 +2,13 @@
 
 header {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  gap: 5rem;
 
   margin: 3.2rem 0 6.2rem;
+}
+
+header h2{
+  text-align: center;
 }
 
 header .back {
@@ -44,6 +47,10 @@ form {
   gap: 1.8rem;
 }
 
+form .text{
+  margin-bottom: 10px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -57,10 +64,24 @@ form {
   color: var(--dark);
 }
 
+.option{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0000009d;
+}
+
 .form-group p {
   font-size: 1rem;
   font-family: var(--secondary-font);
   color: var(--gray-400);
+}
+
+form .enter{
+  font-weight: 900;
+  color: var(--primary);
 }
 
 button {
@@ -84,4 +105,68 @@ button {
 
 button:hover {
   filter: brightness(0.8);
+}
+
+.new-password{
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.social-auth {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social-auth .or{
+  margin-top: 5.2rem;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-auth .or hr{
+  width: 100%;
+  height: 1px;
+  border: 1px solid silver;
+}
+
+.social-auth span {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+
+.socials {
+  width: 100%;
+  display: block;
+  gap: 1rem;
+  margin-top: 5.2rem;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  background-color: #98979775;
+
+  width: 100%;
+  height: 5.6rem;
+  border-radius: 1.2rem;
+
+  transition: all ease-in-out 0.2s;
+
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.socials a:hover {
+  filter: brightness(0.9);
 }

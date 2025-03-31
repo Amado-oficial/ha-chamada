@@ -1,95 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/ha-chamada.png"
-      type="image/x-icon"
-    />
+<html lang="pt-AO">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Raleway:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/ha-chamada.png" type="image/x-icon" />
 
-    <title>Há Chamada | Sign Up</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Raleway:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="../assets/css/signUp.css" />
-    <!-- <link rel="manifest" href="./manifest/manifest.json" /> -->
-    <meta name="theme-color" content="#4845D2" />
-  </head>
-  <body>
-    <main class="container">
-      <header>
-        <div class="back">
+  <title>+ Filtro | Sign Up</title>
+
+  <link rel="stylesheet" href="../assets/css/signUp.css" />
+  <!-- <link rel="manifest" href="./manifest/manifest.json" /> -->
+  <meta name="theme-color" content="#4845D2" />
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <div class="back">
+        <a href="./signIn.html">
           <img src="../assets/images/left.svg" alt="arrow left icon" />
-        </div>
-        <h2>Criar uma conta</h2>
-        <p>Uma solução que tem como</p>
-      </header>
+        </a>
+      </div>
+      <h2>Criar uma conta</h2>
+ 
+    </header>
 
-      <form>
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" name="name" id="name" placeholder="Seu nome" />
-        </div>
+    <form>
+      <div class="text">
+        <h3>Titulo</h3>
+      </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="johndoe@exemplo.com"
-          />
-        </div>
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Seu nome" />
+      </div>
 
-        <div class="form-group">
-          <label for="contact">Contacto</label>
-          <input
-            type="text"
-            name="contact"
-            id="contact"
-            placeholder="Seu contacto"
-          />
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="johndoe@exemplo.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Numero</label>
+        <div class="numero">
+          <p>+244</p>
+          <input type="number" name="numero" id="numero" placeholder="" minlength="9" required />
+        </div>
         </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Digite a palavra passe"
-          />
-        </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite a palavra passe" />
+      </div>
 
-        <div class="form-group">
-          <label for="confirmPassword">Confirmar password</label>
-          <input
-            type="password"
-            name="confirmPassword"
-            id="confirmPassword"
-            placeholder="Confirmar a palavra passe"
-          />
+      <div class="form-group">
+        <label for="confirmPassword">Confirmar password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar a palavra passe" />
 
-          <p>
-            Password precisa conter no mínimo uma letra maiúscula, um número e
-            um caracter especial
-          </p>
-        </div>
+        <p>
+          Password precisa conter no mínimo uma letra maiúscula, um número e
+          um caracter especial
+        </p>
+      </div>
 
-        <div>
-          <button type="submit" class="button">Criar conta</button>
-        </div>
-      </form>
-    </main>
+      <div>
+        <button type="submit" class="button">Criar conta</button>
+      </div>
+      <p>Já tenho uma conta, <a class="enter" href="./signIn.html">Entrar</a></p>
+    </form>
 
-    <script type="module" src="../scripts/context.js"></script>
-  </body>
+    <session class="social-auth">
+      <div class="or">
+           <hr>
+      <span>Ou</span>
+      <hr>
+      </div>
+   
+
+      <div class="socials">
+        <a href="">
+          <img src="../assets/images/google.svg" alt="google logo" />
+          Google
+        </a>
+      </div>
+    </session>
+
+  </main>
+
+  <script type="module" src="../scripts/context.js">
+  </script>
+
+ 
+
+</body>
+
 </html>

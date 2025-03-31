@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
   showProgressTab(currentProgress)
 
   btnSteps.forEach((el) => {
-    el.addEventListener('click', (event) => {
+    el.addEventListener('click', () => {
       nextPrev(1)
     })
   })

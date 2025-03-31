@@ -1,78 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/ha-chamada.png"
-      type="image/x-icon"
-    />
+<html lang="pt-AO">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Raleway:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/ha-chamada.png" type="image/x-icon" />
 
-    <title>Há Chamada | Sign In</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Raleway:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="../assets/css/signIn.css" />
-    <!-- <link rel="manifest" href="./manifest/manifest.json" /> -->
-    <meta name="theme-color" content="#4845D2" />
-  </head>
-  <body>
-    <main class="container">
-      <header>
-        <h2>Entrar no app</h2>
-        <p>Uma solução que tem como</p>
-      </header>
+  <title>+ Filtro | Sign In</title>
 
-      <form>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="johndoe@exemplo.com"
-          />
+  <link rel="stylesheet" href="../assets/css/signIn.css" />
+  <!-- <link rel="manifest" href="./manifest/manifest.json" /> -->
+  <meta name="theme-color" content="#4845D2" />
+
+</head>
+
+<body>
+  <main class="container">
+   
+    <header>
+      <img class="logo" src="../assets/images/google.svg" alt="">
+      <h2>Entrar no app</h2>
+      <p>Uma solução que tem como</p>
+    </header>
+
+    <form>
+      <div class="form-group">
+        <label for="email">Numero</label>
+        <div class="numero">
+          <p>+244</p>
+          <input type="number" name="numero" id="numero" placeholder="" minlength="9" required />
+        </div>
         </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Digite a palavra passe"
-          />
-        </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Digite a palavra passe" />
+        <a class="recuperar" href="./recover.html">Recuperar conta</a>
+      </div>
+      <div class="btn-group">
+        <a href="./home.html" type="submit" class="button">Entrar</button>
+          <a href="./signUp.html" id="btn-new-account" class="button">Criar conta</button>
+      </div>
+    </form>
 
-        <div class="btn-group">
-          <button type="submit" class="button">Entrar</button>
-          <button id="btn-new-account" class="button">Criar conta</button>
-        </div>
-      </form>
+    <session class="social-auth">
+      <hr>
+      <span>Ou</span>
+      <hr>
 
-      <session class="social-auth">
-        <span>Ou poderá entrar com</span>
+      <div class="socials">
+        
+          <img src="../assets/images/google.svg" alt="google logo" />
+          Google
+        </a>
+      </div>
+    </session>
+  </main>
 
-        <div class="socials">
-          <a href="#">
-            <img src="../assets/images/facebook.svg" alt="facebook logo" />
-            Facebook
-          </a>
-          <a href="#">
-            <img src="../assets/images/google.svg" alt="google logo" />
-            Google
-          </a>
-        </div>
-      </session>
-    </main>
+  <script type="module" src="../scripts/context.js"></script>
+</body>
 
-    <script type="module" src="../scripts/context.js"></script>
-  </body>
 </html>

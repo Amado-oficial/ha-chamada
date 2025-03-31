@@ -1,5 +1,58 @@
 @import './root.css';
 
+
+.logomarca{
+  background: url("../images/fundo.png") no-repeat top center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+.processamento {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 4px solid #d0d2d2;
+  border-bottom: 0px;
+  border-top: 0px;
+  animation: girar 3s linear infinite alternate;
+}
+
+@keyframes girar {
+  to{
+    transform: rotatey(360deg);
+  }
+
+}
+
+.bolinha {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 4px solid rgb(197, 197, 197);
+  border-bottom: 0px;
+  border-top: 0px;
+  animation: girarinverso 2s linear infinite alternate;
+}
+
+@keyframes girarinverso {
+  to{
+    transform: rotatex(360deg);
+  }
+
+}
+
 .progress-tab {
   display: flex;
   flex-direction: column;

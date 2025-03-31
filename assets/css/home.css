@@ -8,6 +8,30 @@ header {
   margin: 3.2rem 0 6.2rem;
 }
 
+#cabeca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  
+
+  text-align: center;
+  font-size: 8pt;
+  margin: 3.2rem 0 4rem;
+}
+
+#cabeca img{
+  width: 100px;
+}
+
+#cabeca p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  text-align: justify;
+  line-height: 3px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -85,50 +109,4 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-}
-
-.mobile-menu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-
-.mobile-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.mobile-menu li {
-  margin: 1.2rem;
-}
-
-.mobile-menu a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 0.4rem;
-
-  font-size: 1.4rem;
-  color: var(--gray-400);
-}
-
-.mobile-menu a.active {
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.mobile-menu a img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.mobile-menu .container {
-  margin-bottom: 0;
 }

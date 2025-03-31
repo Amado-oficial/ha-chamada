@@ -22,7 +22,8 @@
   --default-font: 'inter';
   --secondary-font: 'Raleway';
 
-  font-size: 62.5%; /* 10px */
+  font-size: 62.5%;
+  /* 10px */
 }
 
 ul,
@@ -63,9 +64,102 @@ input {
   border-radius: 1.2rem;
   border: 0;
 
-  padding: 0 2.2rem;
+  padding: 0 1.2rem;
+}
+
+ .numero{
+  display: flex;
+  background-color: #f6f4f4;
+  align-items: center;
+  gap: 5px;
+  border-radius: 1.2rem;
+  padding: 0 1.2rem;
+}
+
+.numero p{
+  font-weight: 800;
+}
+
+.numero input{
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+
+/*Estilização da pagina confirm*/
+
+
+.code-input{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.code-input input{
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #827f7f;
+}
+
+/*-----------------*/
+
+ #opt{
+  width: initial;
+  
 }
 
 input::placeholder {
   color: #c3bbbb;
+}
+
+/* Mobile menu style */
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile-menu li {
+  margin: 1.2rem;
+}
+
+.mobile-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.4rem;
+
+  font-size: 1.4rem;
+  color: var(--gray-400);
+}
+
+.mobile-menu a.active {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.mobile-menu a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.mobile-menu .container {
+  margin-bottom: 0;
 }
